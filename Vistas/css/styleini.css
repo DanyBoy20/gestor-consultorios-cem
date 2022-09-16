@@ -1,0 +1,85 @@
+/* FUENTES A UTILIZAR */
+@font-face {
+	font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto Light';
+  src: url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* RESETEO DE ESTILOS EN NAVEGADORES */
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  font-size: 16px;
+} 
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/* Barra de desplazamiento */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--colorBlue1);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--colorBlue3);
+}
+
+/* VARIABLES */
+:root{
+  /* Tamaño textos */
+  --tamanioTitulo: clamp(30px, 5vw, 50px);
+  --tamanioTitulo2: clamp(20px, 5vw, 40px);
+  --tamanioSubtitulo2: clamp(18px, 4vw, 38px);
+  --tamanioSubtitulo3: clamp(18px, 3vw, 30px);
+  --tamanioSubtitulo4: clamp(16px, 3vw, 27px);
+  --tamanioDescripcion: clamp(14px, 2vw, 18px);
+  --tamanioDescripcion2: clamp(10px, 2vw, 14px);
+  --tamanioDescripcion3: clamp(16px, 2vw, 20px);
+  /* colores */ 
+  --colorVerde2: #38af79;
+  --colorVerde6: #5a5b5c;
+  --colorAzul: #02b6c6;
+  --colorAzul2: #039aa7;
+  --colorAzul3: #0354a7;
+  --colorRojo: #e03069;
+  --colorRojo2: #ff0000;
+  --colorBlue: #5f5f5f;
+  --colorBlue1: #474849;
+  --colorBlue2: #d1d1d1;
+  --colorBlue3: #707070;
+  --colorBlue4: #949599;
+  --colorBlue5: #484848;
+  --colorBlanco: #fff;
+  --colorRojoJMA: #fb1806;
+  --colorRojo3: #db403e;
+  /* iconos */
+}
+
+.contenedor_sesionini{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;  
+}
